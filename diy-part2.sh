@@ -35,4 +35,4 @@ sed -i 's/key=password/key=12345678/g' package/kernel/mac80211/files/lib/wifi/ma
 sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/lean/default-settings/files/zzz-default-settings
 
 
-git clone https://github.com/jasonandy999/luci-app-frpc package/luci-app-frpc
+#git clone https://github.com/jasonandy999/luci-app-frpc package/luci-app-frpc
