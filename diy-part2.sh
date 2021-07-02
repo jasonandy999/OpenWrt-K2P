@@ -32,7 +32,7 @@ sed -i 's/ssid=OpenWrt/ssid=iMei/g' package/kernel/mac80211/files/lib/wifi/mac80
 sed -i 's/key=password/key=12345678/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
 
 # 设置密码为空（安装固件时无需密码登陆，然后自己修改想要的密码）
-#sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/lean/default-settings/files/zzz-default-settings
+sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/lean/default-settings/files/zzz-default-settings
 
 
-git clone https://github.com/jasonandy999/packages.git package/lean/luci-app-frpc
+#git clone https://github.com/jasonandy999/packages.git package/lean/luci-app-frpc
