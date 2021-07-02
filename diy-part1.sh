@@ -16,8 +16,6 @@ echo "src-git helloworld https://github.com/fw876/helloworld.git" >> feeds.conf.
 # Add luci-theme-argon
 #删除原默认主题
 rm -rf package/lean/luci-theme-bootstrap
-rm -rf package/lean/luci-theme-material
-rm -rf package/lean/luci-theme-netgear
 rm -rf package/lean/luci-theme-argon 
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
 
