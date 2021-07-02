@@ -34,6 +34,5 @@ sed -i 's/key=password/key=12345678/g' package/kernel/mac80211/files/lib/wifi/ma
 # 设置密码为空（安装固件时无需密码登陆，然后自己修改想要的密码）
 sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/lean/default-settings/files/zzz-default-settings
 
-sed -i 's/广告屏蔽大师 Plus+/广告屏蔽/g' package/lean/luci-app-adbyby-plus/po/zh-cn/adbyby.po
 
 git clone https://github.com/jasonandy999/luci-app-frpc package/luci-app-frpc
