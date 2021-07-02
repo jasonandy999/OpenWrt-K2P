@@ -35,6 +35,5 @@ sed -i 's/key=password/key=12345678/g' package/kernel/mac80211/files/lib/wifi/ma
 sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/lean/default-settings/files/zzz-default-settings
 
 sed -i 's/广告屏蔽大师 Plus+/广告屏蔽/g' package/lean/luci-app-adbyby-plus/po/zh-cn/adbyby.po
-sed -i 's/services/vpn/g'  `grep services -rl package/lean/luci-app-adbyby-plus/luasrc`
 
 git clone https://github.com/jasonandy999/luci-app-frpc package/luci-app-frpc
