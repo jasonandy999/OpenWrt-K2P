@@ -20,7 +20,7 @@ echo "sed -i 's#https://mirrors.cloud.tencent.com/lede/snapshots#https://op.supe
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 
 # Add a feed source增加默认源地址
-sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
+#sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
 
 # 修改主机名字，把OpenWrt-123修改你喜欢的就行（不能使用中文）
 sed -i '/uci commit system/i\uci set system.@system[0].hostname='K2P'' package/default-settings/files/zzz-default-settings
@@ -35,4 +35,4 @@ sed -i 's/key=password/key=12345678/g' package/kernel/mac80211/files/lib/wifi/ma
 sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/lean/default-settings/files/zzz-default-settings
 
 
-#git clone https://github.com/jasonandy999/luci-app-frpc package/luci-app-frpc
+git clone https://github.com/jasonandy999/luci-app-frpc package/luci-app-frpc
