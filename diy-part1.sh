@@ -14,5 +14,6 @@
 echo "src-git helloworld https://github.com/fw876/helloworld.git" >> feeds.conf.default
 
 # Add luci-theme-argon
-git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon
-rm -rf ../lean/luci-theme-argon
+rm -rf package/lean/luci-theme-argon 
+git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git  package/lean/luci-theme-argon
+git clone https://github.com/jerrykuku/luci-app-argon-config.git  package/lean/luci-theme-argon-config
